@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вклад Польши в химию</title>
+    <style>
+        /* Общие стили */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #e0f7fa;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Навигация */
+        nav {
+            background-color: #004d40;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: #00796b;
+        }
+
+        /* Основной контейнер */
+        .container {
+            max-width: 1200px;
+            width: 90%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+        /* Анимации */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        h1, h2 {
+            color: #004d40;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* Изображения */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        img {
+            width: 70%;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Подвал */
+        .footer {
+            background-color: #004d40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            .image-container img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Навигационное меню -->
+<nav>
+    <ul>
+        <li><a href="javascript:void(0);" onclick="showPage('home')">Главная</a></li>
+        <li><a href="javascript:void(0);" onclick="showPage('mariaCurie')">Мария Склодовская-Кюри</a></li>
+        <li><a href="javascript:void(0);" onclick="showPage('leonard')">Леонард Нелебу</a></li>
+        <li><a href="javascript:void(0);" onclick="showPage('feliks')">Казимир Филиппов</a></li>
+        <li><a href="javascript:void(0);" onclick="showPage('contact')">Контакты</a></li>
+    </ul>
+</nav>
+
+<!-- Страница Главная -->
+<div id="home" class="container active">
+    <h1>Вклад Польши в химию</h1>
+    <p>Польша сыграла важную роль в развитии химии, и её учёные значительно повлияли на научные исследования и практическое применение химии. Рассмотрим несколько ярких представителей польской науки, чьи открытия и исследования стали важной вехой в химической науке.</p>
+
+    <h2>Известные учёные Польши в химии</h2>
+    <p>Польша гордится множеством учёных, чьи работы принесли значительный вклад в химию. Среди них Мария Склодовская-Кюри, Леонард Нелебу, Казимир Феликс Филиппов и многие другие. Все они внесли незаменимый вклад в развитие химической науки, и их работы оказали влияние на дальнейшее развитие разных отраслей химии, включая физическую, органическую и аналитическую химию.</p>
+</div>
+
+<!-- Страница о Марии Склодовской-Кюри -->
+<div id="mariaCurie" class="container">
+    <h1>Мария Склодовская-Кюри</h1>
+    <p>Мария Склодовская-Кюри, одна из величайших учёных в истории, родилась в Варшаве в 1867 году. Она известна своими исследованиями радиоактивности, за что была удостоена двух Нобелевских премий — в области физики (1903) и химии (1911). Её работа стала основой для множества дальнейших исследований в области ядерной физики и химии.</p>
+
+    <div class="image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Marie_Curie.jpg" alt="Мария Склодовская-Кюри">
+    </div>
+
+    <p>Открытие радия и полония стало революционным шагом в химии, а сама Мария Склодовская-Кюри стала символом женского вклада в науку. Она является примером того, как страсть к знаниям может изменить мир.</p>
+</div>
+
+<!-- Страница о Леонард Нелебу -->
+<div id="leonard" class="container">
+    <h1>Леонард Нелебу</h1>
+    <p>Леонард Нелебу — польский химик, который внес значительный вклад в развитие органической химии. Его исследования помогли в изучении синтетических методов, а также в применении химии для создания новых материалов.</p>
+</div>
+
+<!-- Страница о Казимире Феликсе Филиппове -->
+<div id="feliks" class="container">
+    <h1>Казимир Феликс Филиппов</h1>
+    <p>Феликс Филиппов — польский химик, который был одним из первых, кто предложил метод синтеза новых элементов, который позволил значительно расширить круг химических соединений, доступных для исследований.</p>
+</div>
+
+<!-- Страница Контакты -->
+<div id="contact" class="container">
+    <h1>Контакты</h1>
+    <p>Если у вас есть вопросы, пожалуйста, свяжитесь с нами по адресу: <strong>info@science.pl</strong></p>
+</div>
+
+<!-- Подвал -->
+<div class="footer">
+    <p>Сайт был создан для освещения вклада польских учёных в химию. Все права защищены &copy; 2024</p>
+</div>
+
+<script>
+    // Функция для отображения выбранной страницы
+    function showPage(pageId) {
+        // Скрыть все страницы
+        const pages = document.querySelectorAll('.container');
+        pages.forEach(page => page.classList.remove('active'));
+
+        // Показать выбранную страницу
+        const selectedPage = document.getElementById(pageId);
+        selectedPage.classList.add('active');
+    }
+</script>
+
+</body>
+</html>
